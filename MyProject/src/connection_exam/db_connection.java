@@ -56,12 +56,12 @@ public class db_connection {
 //				SOLAR	CHAR(1 BYTE)
 //				HEIGHT	NUMBER(3,0)
 //				WEIGHT	NUMBER(3,0)				
-				String no = rs.getString("PLAYER_ID");
-				String title = rs.getString("PLAYER_NAME");
-				String writer= rs.getString("TEAM_ID");
-				String wdate = rs.getString("E_PLAYER_NAME");
-				String hit = rs.getString("NICKNAME");
-				System.out.println("["+no+"]["+title+"]["+writer+"]["+wdate+"]["+hit+"]");
+
+				System.out.println("["+rs.getString("PLAYER_ID")
+				                      +"]["+rs.getString("PLAYER_NAME")
+				                      +"]["+rs.getString("TEAM_ID")
+				                      +"]["+rs.getString("E_PLAYER_NAME")
+				                      +"]["+rs.getString("NICKNAME")+"]");
 			}//end 게시판 리스트 보기(while)
 
 		}catch(Exception e){
