@@ -43,25 +43,20 @@ public class db_connection {
 			//   stmt.executeUpdate(String sql)
 			//6. 화면출력
 			while(rs.next()){
-//				PLAYER_ID	CHAR(7 BYTE)
-//				PLAYER_NAME	VARCHAR2(20 BYTE)
-//				TEAM_ID	CHAR(3 BYTE)
-//				E_PLAYER_NAME	VARCHAR2(40 BYTE)
-//				NICKNAME	VARCHAR2(30 BYTE)
-//				JOIN_YYYY	CHAR(4 BYTE)
-//				POSITION	VARCHAR2(10 BYTE)
-//				BACK_NO	NUMBER(2,0)
-//				NATION	VARCHAR2(20 BYTE)
-//				BIRTH_DATE	DATE
-//				SOLAR	CHAR(1 BYTE)
-//				HEIGHT	NUMBER(3,0)
-//				WEIGHT	NUMBER(3,0)				
-
 				System.out.println("["+rs.getString("PLAYER_ID")
 				                      +"]["+rs.getString("PLAYER_NAME")
 				                      +"]["+rs.getString("TEAM_ID")
 				                      +"]["+rs.getString("E_PLAYER_NAME")
-				                      +"]["+rs.getString("NICKNAME")+"]");
+				                      +"]["+rs.getString("NICKNAME")
+				                      +"]["+rs.getString("JOIN_YYYY")
+				                      +"]["+rs.getString("POSITION")
+				                      +"]["+rs.getInt("BACK_NO")
+				                      +"]["+rs.getString("NATION")
+				                      +"]["+rs.getDate("BIRTH_DATE")
+				                      +"]["+rs.getString("SOLAR")
+				                      +"]["+rs.getInt("HEIGHT")
+				                      +"]["+rs.getInt("WEIGHT")
+				                      +"]");
 			}//end 게시판 리스트 보기(while)
 
 		}catch(Exception e){
