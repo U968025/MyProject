@@ -5,7 +5,7 @@ public class _01_Method {
     public static void sayHello() {
         System.out.println("안녕하세요 !!!!!!!");
     }
-    //Method Define Two
+    //Method Define Two  
     public static void sayHello(int number, int cnt) {
         int result = number * cnt;
         System.out.println(result);
