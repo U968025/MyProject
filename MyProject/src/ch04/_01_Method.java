@@ -3,7 +3,7 @@ package ch04;
 public class _01_Method {
     //Method Define One
     public static void sayHello() {
-        System.out.println("안녕하세요 !");
+        System.out.println("안녕하세요 !!!");
     }
     //Method Define Two
     public static void sayHello(int number, int cnt) {
