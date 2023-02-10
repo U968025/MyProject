@@ -9,7 +9,7 @@ public class _01_Method {
     public static void sayHello(int number, int cnt) {
         int result = number * cnt;
         System.out.println(result);
-    }
+    } 
     //
     public static String getHiddenData(String data, int index){
         String hiddenData = data.substring(0,index);
