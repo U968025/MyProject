@@ -27,12 +27,12 @@ public class db_connection {
 			String url = "jdbc:oracle:thin:@192.168.219.103:1521:xe";
 			String uid = "system",pw = "prince21!";
 			con = DriverManager.getConnection(url,uid,pw);
-			System.out.println("DB접속완료!");
+			System.out.println("DB 접속완료!");
 			Statement stmt = null;
 
 			//3. 실행할 sql문장을 작성한다.
 			String sql = "select * from player order by PLAYER_ID desc";
-			//   System.out.println(sql);
+			System.out.println(sql);
 
 			//4. sql을 실행할 수 있는 연결 상태를 만든다.
 			stmt = con.createStatement();
